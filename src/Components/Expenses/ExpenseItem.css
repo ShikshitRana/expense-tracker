@@ -1,0 +1,121 @@
+.expense-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #5584ac;
+  box-shadow: 0 1px 18px rgba(0, 0, 0, 0.395);
+}
+
+.expense-item__description {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 87%;
+}
+
+.expense-item h2 {
+  width: 80%;
+  font-size: 1rem;
+  margin: 0 1rem;
+  padding-bottom: 5px;
+  color: white;
+  overflow-x: scroll;
+}
+
+.expense-item_div {
+  display: flex;
+  flex-direction: row;
+}
+
+.expense-item__price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #22577e;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.delete-btn {
+  margin-right: 0.9rem;
+  margin-left: 0.9rem;
+  font-weight: 900;
+  color: #ffffff;
+  border: 1px solid;
+  border-color: #5584ac;
+  background-color: #5584ac;
+  transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+  color: #bd3323;
+  cursor: pointer;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5584ac;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22577e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #95d1cc;
+}
+
+@media (max-width: 600px) {
+  .expense-item {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .expense-item_date {
+    flex: 1 1 10%;
+  }
+
+  .expense-item__description {
+    max-width: 70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+  }
+
+  .expense-item__description h2 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: 200;
+    max-width: 60%;
+  }
+
+  .expense-item_div {
+    width: fit-content;
+    justify-content: flex-end;
+  }
+
+  .expense-item__price {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .delete-btn {
+    margin-right: 0rem;
+    margin-left: 0.2rem;
+  }
+}
