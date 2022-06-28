@@ -1,5 +1,6 @@
 # expense-tracker
-Track your day to day expenses by adding in the app. App will track your expenditure and will provide a month wise graphical representation of your expenditure. 
+A simple expense tracker web app made using reactjs.
+Track your day-to-day expenses by adding to the web app. The app will track your expenditure and will provide a month-wise graphical representation of your expenditure. 
 
 Link of the app - https://expense-tracker-app-89a53.web.app/
 
